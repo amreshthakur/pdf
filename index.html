@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Viewer Show</title>
+    <link rel="stylesheet" href="pdfviewer.css">
+</head>
+<body>
+    <div class="header">
+        <!-- -----------------------------------Navbar or Menu bar Opening Tag  Part----------------------------------------------- -->
+  <div class="myTop" id="myTop">
+    <a href="#home" class="active">Home</a>
+    <a href="#About-us">About us</a>
+    <a href="#contact">Contact us</a>
+    <a href="#Disclaimer">Disclaimer</a>
+    <a href="#Privacy">Privacy Policy</a>
+    <a href="#Terms">Terms and Conditions</a>
+    <a href="#DMCA">DMCA</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var y = document.getElementById("myTop");
+      if (y.className === "myTop") {
+        y.className += " responsive";
+      } else {
+        y.className = "myTop";
+      }
+    }
+  </script>
+<!-- ------------------------Navbar or Menu bar Closing Tag  Part------------------->
+    </div>
+</body>
+</html>

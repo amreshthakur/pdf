@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto!important;
+}
+/* --------------------------Navbar or Menu bar opening CSS Part ----------------------------------------------------- */
+.myTop {
+    overflow: hidden;
+    background-color: #333;
+    float: none;
+    padding: 10px;
+  }
+  
+  .myTop a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .myTop a:hover {
+    background-color: rgb(8, 255, 29);
+    color: black;
+  }
+  
+  .myTop a.active {
+    background-color: #c73510;
+    color: white;
+  }
+  
+  .myTop .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .myTop a:not(:first-child) {
+      display: none;
+    }
+  
+    .myTop a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .myTop.responsive {
+      position: relative;
+    }
+  
+    .myTop.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .myTop.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  /* ---------------------------Navbar or Menu bar Closing CSS Part------------------------------------------- */
